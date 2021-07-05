@@ -23,6 +23,10 @@ keys = [
              lazy.spawn("rofi -show drun -modi drun"),
              desc='Run Launcher'
              ),
+         Key(["mod1"], "Tab", 
+             lazy.spawn("rofi -show window"),
+             desc="Task Switcher"
+             ),
          Key([mod], "b",
              lazy.spawn("firefox"),
              desc="Launch Browser"
