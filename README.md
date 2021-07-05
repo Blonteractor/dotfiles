@@ -11,7 +11,7 @@ Compositor - Picom \
 Text Editor - Neovim \
 Wallpaper Manager - Nitrogen \
 GUI File Manager - PCManFM \
-CLI File Manager - vifm \
+CLI File Manager - vifm 
 
 ## Other Install Utilities
 htop \
