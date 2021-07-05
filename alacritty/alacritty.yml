@@ -333,14 +333,14 @@ background_opacity: 0.80
 # Allow terminal applications to change Alacritty's window title.
 #dynamic_title: true
 
-#cursor:
+cursor:
   # Cursor style
   #
   # Values for `style`:
   #   - ▇ Block
   #   - _ Underline
   #   - | Beam
-  #style: Block
+  style: Beam
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
@@ -418,7 +418,7 @@ shell:
   # If this is `true`, the cursor is temporarily hidden when typing.
   #hide_when_typing: false
 
-  #url:
+  url:
     # URL launcher
     #
     # This program is executed when clicking on a text which is recognized as a URL.
@@ -431,8 +431,8 @@ shell:
     #   - (Linux/BSD) xdg-open
     #   - (Windows) explorer
     #launcher:
-    #  program: xdg-open
-    #  args: []
+      program: firefox
+      #args: []
 
     # URL modifiers
     #
