@@ -21,10 +21,9 @@ keys = [
              ),
          Key([mod, "shift"], "Return",
              lazy.spawn("rofi -show drun -modi drun"),
-             # lazy.spawn("rofi -show drun -config ~/.config/rofi/themes/dt-dmenu.rasi -display-drun \"Run: \" -drun-display-format \"{name}\""),
              desc='Run Launcher'
              ),
-         Key([mod, "shift"], "f",
+         Key([mod], "b",
              lazy.spawn("firefox"),
              desc="Launch Browser"
              ),
@@ -338,7 +337,7 @@ def init_widgets_list():
                        ),
               widget.CheckUpdates(
                        update_interval = 1800,
-                       distro = "Arch",
+                       distro = "Arch_checkupdates",
                        display_format = "{updates} Updates",
                        foreground = colors[2],
                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e sudo pacman -Syu')},
