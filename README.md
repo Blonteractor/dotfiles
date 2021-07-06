@@ -13,14 +13,20 @@ Wallpaper Manager - Nitrogen \
 GUI File Manager - PCManFM \
 CLI File Manager - vifm 
 
-## Other Install Utilities
-htop \
-lxappearance \
-[bat](https://github.com/sharkdp/bat) \
+## Other Installed Utilities
+htop - Task Manager \
+lxappearance: GTK theme changing utility \
+[bat](https://github.com/sharkdp/bat) - cat but better and colorfull \
 [bottom]() \
-[ripgrep](https://github.com/BurntSushi/ripgrep) \
-[exa](https://github.com/ogham/exa) \
-[dust](https://github.com/bootandy/dust) \
-[tldr](https://github.com/tldr-pages/tldr) \
-[procs](https://github.com/dalance/procs) \
-[shell color scripts](https://gitlab.com/dwt1/shell-color-scripts)
+[ripgrep](https://github.com/BurntSushi/ripgrep) - grep but better \
+[exa](https://github.com/ogham/exa) - ls but better \
+[dust](https://github.com/bootandy/dust) - du but better\
+[tldr](https://github.com/tldr-pages/tldr) - Gives short documentation of a command\
+[procs](https://github.com/dalance/procs) - Process veiwer \
+[shell color scripts](https://gitlab.com/dwt1/shell-color-scripts) \
+doge - yes \
+lolcat - Gives color gradient to anything \
+figlet - ASCII art
+
+## Additional Notes
+Add the line `Defaults insults` in ur sudoers file somewhere to spice up ur shell
