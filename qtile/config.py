@@ -334,13 +334,15 @@ def init_widgets_list():
               widget.TextBox(
                       font = "Ubuntu Bold",
                        text = " ⟳",
-                       padding = 5,
+                       padding = 10,
                        foreground = colors[2],
                        background = colors[4],
                        fontsize = 10
                        ),
               widget.CheckUpdates(
                        update_interval = 1800,
+                       padding = 5,
+                       font = "Ubuntu Bold",
                        distro = "Arch_checkupdates",
                        display_format = "{updates} Updates",
                        foreground = colors[2],
@@ -379,6 +381,7 @@ def init_widgets_list():
                       padding = 0
                       ),
               widget.Volume(
+                      font = "Ubuntu Bold",
                        foreground = colors[2],
                        background = colors[5],
                        padding = 5

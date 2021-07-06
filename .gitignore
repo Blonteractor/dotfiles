@@ -1,5 +1,5 @@
 bottom/*
-*/__pycache__/*
+__pycache__/
 Code - OSS/*
 dconf/*
 gtk-2.0/*
