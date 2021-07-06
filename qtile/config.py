@@ -23,6 +23,10 @@ keys = [
              lazy.spawn("rofi -show drun -modi drun"),
              desc='Run Launcher'
              ),
+         Key([mod, "shift"], "c",
+             lazy.spawn("/home/blonteractor/.config/rofi/scripts/config_selector.sh"),
+             desc="Select config file to edit"
+             ),
          Key(["mod1"], "Tab", 
              lazy.spawn("rofi -show window"),
              desc="Task Switcher"
