@@ -26,7 +26,8 @@ lxappearance: GTK theme changing utility \
 [shell color scripts](https://gitlab.com/dwt1/shell-color-scripts) \
 doge - yes \
 lolcat - Gives color gradient to anything \
-figlet - ASCII art
+figlet - ASCII art \
+pacman-contrib - dependeny for the pannel, to checkupdates
 
 ## Additional Notes
 Add the line `Defaults insults` in ur sudoers file somewhere to spice up ur shell
