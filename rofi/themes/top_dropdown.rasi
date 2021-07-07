@@ -14,7 +14,7 @@ configuration {
 * {
     background:                     #243141;
     background-alt:              	#243141;
-    background-bar:                 #4f76c7;
+    background-bar:                 #5168e6;
     foreground:                     #f5f5f5b3;
     accent:			            	#20bd7e;
 }
@@ -25,10 +25,10 @@ window {
     text-color:                     @foreground;
 	border:							0px;
 	border-color:					@border;
-    border-radius:                  5px;
+    border-radius:                  3px;
 	width:							30%;
     location:                       north;
-    x-offset:                       -270;
+    x-offset:                       -258;
     y-offset:                       20;
 }
 
