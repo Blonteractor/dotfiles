@@ -12,6 +12,7 @@ from typing import List  # noqa: F401
 
 mod = "mod4"                                     # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"                             # My terminal of choice
+rofi_scripts_location = "/home/blonteractor/.config/rofi/scripts/"
 
 colors = [["#282c34", "#282c34"], # panel background
           ["#3d3f4b", "#434758"], # background for current screen tab
@@ -133,8 +134,12 @@ keys = [
          # Rofi scripts launched using the key chord SUPER+p followed by 'key'
          KeyChord([mod], "p", [
              Key([], "c",
-                 lazy.spawn("/home/blonteractor/.config/rofi/scripts/config_selector.sh"),
+                 lazy.spawn(f"{rofi_scripts_location}config_selector.sh"),
                  desc='Choose a config file to edit'
+                 ),
+             Key([], "s",
+                 lazy.spawn(f"{rofi_scripts_location}rofi_screenshot.sh"),
+                 desc='Take s screenshot or record your screen'
                  )
          ])
 ]
