@@ -45,7 +45,15 @@ alias cp="cp -i"
 alias mv="mv -i"
 alias rm="rm -i"
 
+#cd shortcuts
+alias ..="cd .."
+alias ...="cd ../.."
+alias .4="cd ../../.."
+alias .5="cd ../../../.."
+
+#extra flags
 alias tree="tree -C"
+
 alias vim="nvim"
 
 colorscript -r | lolcat
