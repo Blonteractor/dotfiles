@@ -13,6 +13,15 @@ from typing import List  # noqa: F401
 mod = "mod4"                                     # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"                             # My terminal of choice
 
+colors = [["#282c34", "#282c34"], # panel background
+          ["#3d3f4b", "#434758"], # background for current screen tab
+          ["#ffffff", "#ffffff"], # font color for group names
+          ["#ff5555", "#ff5555"], # border line color for current tab
+          ["#2e9e62", "#2e9e62"], # border line color for 'other tabs' and color for 'odd widgets'
+          ["#5a6bed", "#5a6bed"], # color for the 'even widgets'
+          ["#20bd7e", "#20bd7e"], # window name
+          ["#215ed9", "#215ed9"]] # backbround for inactive screens
+
 keys = [
          ### The essentials
          Key([mod], "Return",
@@ -143,9 +152,9 @@ for i, (name, kwargs) in enumerate(group_names, 1):
     keys.append(Key([mod, "shift"], str(i), lazy.window.togroup(name))) # Send current window to another group
 
 layout_theme = {"border_width": 2,
-                "margin": 8,
-                "border_focus": "e1acff",
-                "border_normal": "1D2330"
+                "margin": 5,
+                "border_focus": colors[4][0], 
+                "border_normal": "#1D2330"
                 }
 
 layouts = [
@@ -185,14 +194,6 @@ layouts = [
     layout.Floating(**layout_theme)
 ]
 
-colors = [["#282c34", "#282c34"], # panel background
-          ["#3d3f4b", "#434758"], # background for current screen tab
-          ["#ffffff", "#ffffff"], # font color for group names
-          ["#ff5555", "#ff5555"], # border line color for current tab
-          ["#2e9e62", "#2e9e62"], # border line color for 'other tabs' and color for 'odd widgets'
-          ["#5a6bed", "#5a6bed"], # color for the 'even widgets'
-          ["#20bd7e", "#20bd7e"], # window name
-          ["#215ed9", "#215ed9"]] # backbround for inactive screens
 
 prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
 
