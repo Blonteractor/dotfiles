@@ -20,7 +20,9 @@ colors = [["#282c34", "#282c34"], # panel background
           ["#2e9e62", "#2e9e62"], # border line color for 'other tabs' and color for 'odd widgets'
           ["#5a6bed", "#5a6bed"], # color for the 'even widgets'
           ["#20bd7e", "#20bd7e"], # window name
-          ["#215ed9", "#215ed9"]] # backbround for inactive screens
+          ["#215ed9", "#215ed9"], # background for inactive screens
+          ["#6100f4", "#6100f4"], # window name background
+          ["", ""]]
 
 keys = [
          ### The essentials
@@ -269,14 +271,19 @@ def init_widgets_list():
                        foreground = colors[2],
                        background = colors[0]
                        ),
+              unicode_arrow_widget(0, 5),
               widget.WindowName(
+                      mouse_callbacks = {"Button1": lambda: qtile.cmd_spawn("rofi -show window")},
+                      font = "Ubuntu Bold",
                        foreground = colors[6],
-                       background = colors[0],
+                       background = colors[5],
+                       #background = colors[0],
                        padding = 0
                        ),
+              unicode_arrow_widget(5, 0),
               widget.Systray(
                        background = colors[0],
-                       padding = 5
+                       padding = 9
                        ),
               widget.Sep(
                        linewidth = 0,
@@ -303,7 +310,7 @@ def init_widgets_list():
               widget.TextBox(
                       font = "Ubuntu Bold",
                        text = " ⟳",
-                       padding = 10,
+                       padding = 5,
                        foreground = colors[2],
                        background = colors[4],
                        fontsize = 10
@@ -319,40 +326,21 @@ def init_widgets_list():
                        background = colors[4]
                        ),
              unicode_arrow_widget(4, 5),
-              widget.TextBox(
-                       text = " 🖬",
+              widget.CPU(
+                      font = "Ubuntu Bold",
                        foreground = colors[2],
                        background = colors[5],
-                       padding = 0,
+                       padding = 3,
+                       mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e htop')},
+                       format = "{load_percent}%",
                        fontsize = 14
                        ),
               widget.Memory(
                        font = "Ubuntu Bold",
+                       format = "{MemUsed: .0f}M",
                        foreground = colors[2],
                        background = colors[5],
                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e htop')},
-                       padding = 5
-                       ),
-             unicode_arrow_widget(5, 4),
-              widget.TextBox(
-                       text = " ₿",
-                       padding = 7,
-                       foreground = colors[2],
-                       background = colors[4],
-                       fontsize = 12
-                       ),
-             unicode_arrow_widget(4, 5),
-              widget.TextBox(
-                      font = "Ubuntu Bold",
-                      text = " Vol:",
-                      foreground = colors[2],
-                      background = colors[5],
-                      padding = 0
-                      ),
-              widget.Volume(
-                      font = "Ubuntu Bold",
-                       foreground = colors[2],
-                       background = colors[5],
                        padding = 5
                        ),
              unicode_arrow_widget(5, 4),
