@@ -29,5 +29,11 @@ lolcat - Gives color gradient to anything \
 figlet - ASCII art \
 pacman-contrib - dependeny for the pannel, to checkupdates
 
+### Dependencies
+pacman-contrib - Pannel
+xclip - Rofi Screenshot Script
+ffxast - Rofi Screenshot Script
+slop - Rofi Screenshot Script
+
 ## Additional Notes
 Add the line `Defaults insults` in ur sudoers file somewhere to spice up ur shell
