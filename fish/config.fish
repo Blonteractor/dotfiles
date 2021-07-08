@@ -4,7 +4,7 @@ end
 
 set EDITOR "nvim"
 set TERM "alacritty"
-
+set DESKTOP_SESSION "qtile"
 
 # Functions needed for !! and !$
 function __history_previous_command
