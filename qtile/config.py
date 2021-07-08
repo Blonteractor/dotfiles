@@ -137,6 +137,10 @@ keys = [
                  lazy.spawn(f"{rofi_scripts_location}config_selector.sh"),
                  desc='Choose a config file to edit'
                  ),
+             Key([], "l", 
+                 lazy.spawn(f"{rofi_scripts_location}powermenu.sh"),
+                 desc="Show powermenu"
+                 ),
              Key([], "s",
                  lazy.spawn(f"{rofi_scripts_location}rofi_screenshot.sh"),
                  desc='Take s screenshot or record your screen'
@@ -235,7 +239,7 @@ def init_widgets_list():
                        margin_y = 2,
                        background = colors[0],
                        scale = "True",
-                       mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm)}
+                       mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(f"{rofi_scripts_location}powermenu.sh"),'Button2': lambda: qtile.cmd_spawn(myTerm)}
                        ),
              widget.Sep(
                        linewidth = 0,
