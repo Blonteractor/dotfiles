@@ -12,6 +12,7 @@ Text Editor - Neovim \
 Wallpaper Manager - Nitrogen \
 GUI File Manager - PCManFM \
 CLI File Manager - vifm 
+Lockscreen - betterlockscreen
 
 ## Other Installed Utilities
 htop - Task Manager \
