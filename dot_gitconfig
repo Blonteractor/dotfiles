@@ -1,0 +1,10 @@
+[user]
+	signingkey = AB25B0A1F8905363
+	email = priyanv2003@gmail.com
+	name = Blonteractor
+[commit]
+	gpgsign = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[credential]
+	credentialStore = secretservice
